@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  call_id: 1
+  to: 1
+  from: 1
+  status: 1
+
+two:
+  call_id: 1
+  to: 1
+  from: 1
+  status: 1
