@@ -1,4 +1,5 @@
 class DlrsController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   before_action :set_dlr, only: [:show, :edit, :update, :destroy]
 
   # GET /dlrs
@@ -69,6 +70,6 @@ class DlrsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def dlr_params
-      params.require(:dlr).permit(:to)
+      params.permit(:to, :created_at, :updated_at, :network_code, :messageId, :msisdn, :status, :err_code, :price, :scts, :message_timestamp, :client_ref)
     end
 end

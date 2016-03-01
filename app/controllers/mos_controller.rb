@@ -1,4 +1,5 @@
 class MosController < ApplicationController
+  skip_before_filter :verify_authenticity_token
   before_action :set_mo, only: [:show, :edit, :update, :destroy]
 
   # GET /mos
@@ -69,6 +70,6 @@ class MosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mo_params
-      params.permit(:status, :msisdn, :messageId, :message_timestamp)
+      params.permit(:status, :msisdn, :to, :messageId, :message_timestamp, :text, :keyword, :type, :created_at, :updated_at)
     end
 end

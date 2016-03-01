@@ -72,7 +72,7 @@ class MessagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.permit(:msisdn, :to, :text)
+      params.permit(:msisdn, :to, :text, :created_at, :updated_at, :keyword, :type, :messageId, :network_code, :price, :status, :scts, :err_code, :message_timestamp)
 
     end
 end
