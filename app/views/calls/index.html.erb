@@ -7,10 +7,19 @@
 <table>
   <thead>
     <tr>
-      <th>Call</th>
+      <th>Call Id</th>
       <th>To</th>
       <th>From</th>
       <th>Status</th>
+      <th>Call start</th>
+      <th>Call end</th>
+      <th>Call duration</th>
+      <th>Call request</th>
+      <th>Call direction</th>
+      <th>Call price</th>
+      <th>Call rate</th>
+      <th>Created at</th>
+      <th>Updated at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +31,16 @@
         <td><%= call.to %></td>
         <td><%= call.from %></td>
         <td><%= call.status %></td>
+        <td><%= call.call_start %></td>
+        <td><%= call.call_end %></td>
+        <td><%= call.call_duration %></td>
+        <td><%= call.call_request %></td>
+        <td><%= call.call_direction %></td>
+        <td><%= call.call_price %></td>
+        <td><%= call.call_rate %></td>
+        <td><%= call.created_at %></td>
+        <td><%= call.updated_at %></td>
+
         <td><%= link_to 'Show', call %></td>
         <td><%= link_to 'Edit', edit_call_path(call) %></td>
         <td><%= link_to 'Destroy', call, method: :delete, data: { confirm: 'Are you sure?' } %></td>

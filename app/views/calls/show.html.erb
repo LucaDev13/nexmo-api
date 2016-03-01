@@ -20,5 +20,50 @@
   <%= @call.status %>
 </p>
 
+<p>
+  <strong>Call start:</strong>
+  <%= @call.call_start %>
+</p>
+
+<p>
+  <strong>Call end:</strong>
+  <%= @call.call_end %>
+</p>
+
+<p>
+  <strong>Call duration<:/strong>
+  <%= @call.call_duration %>
+</p>
+
+<p>
+  <strong>Call request</strong>
+  <%= @call.call_request %>
+</p>
+
+<p>
+  <strong>Call direction:</strong>
+  <%= @call.call_direction %>
+</p>
+
+<p>
+  <strong>Call price:</strong>
+  <%= @call.call_price %>
+</p>
+
+<p>
+  <strong>Call rate:</strong>
+  <%= @call.call_rate %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @call.created_at %>
+</p>
+
+<p>
+  <strong>updated_at:</strong>
+  <%= @call.updated_at %>
+</p>
+
 <%= link_to 'Edit', edit_call_path(@call), :class => "button" %>
 <%= link_to 'Back', calls_path, :class => "button" %>
