@@ -69,6 +69,6 @@ class MosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mo_params
-      params.require(:mo).permit(:status)
+      params.permit(:status, :msisdn, :messageId, :message_timestamp)
     end
 end
