@@ -7,7 +7,7 @@
 <table>
   <thead>
     <tr>
-      <th>From</th>
+      <th>Msisdn</th>
       <th>To</th>
       <th>Text</th>
       <th colspan="3"></th>
@@ -17,7 +17,7 @@
   <tbody>
     <% @messages.each do |message| %>
       <tr>
-        <td><%= message.from %></td>
+        <td><%= message.msisdn %></td>
         <td><%= message.to %></td>
         <td><%= message.text %></td>
         <td><%= link_to 'Show', message %></td>
