@@ -5,5 +5,50 @@
   <%= @dlr.to %>
 </p>
 
+<p>
+  <strong>Network code:</strong>
+  <%= @dlr.network_code %>
+</p>
+
+<p>
+  <strong>MessageId:</strong>
+  <%= @dlr.messageId %>
+</p>
+
+<p>
+  <strong>Msisdn:</strong>
+  <%= @dlr.msisdn %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @dlr.status %>
+</p>
+
+<p>
+  <strong>Error code:</strong>
+  <%= @dlr.err_code %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @dlr.price %>
+</p>
+
+<p>
+  <strong>Scts:</strong>
+  <%= @dlr.scts %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @dlr.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @dlr.updated_at %>
+</p>
+
 <%= link_to 'Edit', edit_dlr_path(@dlr), :class => "button" %>
 <%= link_to 'Back', dlrs_path, :class => "button" %>

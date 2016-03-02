@@ -7,7 +7,16 @@
 <table>
   <thead>
     <tr>
-      <th>To</th>
+      <th>To:</th>
+      <th>Network code:</th>
+      <th>MessageId:</th>
+      <th>Msisdn:</th>
+      <th>Status:</th>
+      <th>Error Code:</th>
+      <th>Price:</th>
+      <th>Scts:</th>
+      <th>Updated at:</th>
+      <th>Created at:</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +25,15 @@
     <% @dlrs.each do |dlr| %>
       <tr>
         <td><%= dlr.to %></td>
+        <td><%= dlr.network_code %></td>
+        <td><%= dlr.messageId %></td>
+        <td><%= dlr.msisdn %></td>
+        <td><%= dlr.status %></td>
+        <td><%= dlr.err_code %></td>
+        <td><%= dlr.price %></td>
+        <td><%= dlr.scts %></td>
+        <td><%= dlr.updated_at %></td>
+        <td><%= dlr.created_at %></td>
         <td><%= link_to 'Show', dlr %></td>
         <td><%= link_to 'Edit', edit_dlr_path(dlr) %></td>
         <td><%= link_to 'Destroy', dlr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
