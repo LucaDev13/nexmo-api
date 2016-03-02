@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160302202826) do
+ActiveRecord::Schema.define(version: 20160302225908) do
 
   create_table "calls", force: :cascade do |t|
-    t.integer  "call_id",        limit: 30
-    t.integer  "to",             limit: 20
-    t.integer  "from",           limit: 20
+    t.integer  "call_id",        limit: 8
+    t.integer  "to",             limit: 8
+    t.integer  "from",           limit: 8
     t.integer  "status"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "call_request"
     t.string   "call_direction"
     t.float    "call_price"
@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20160302202826) do
   end
 
   create_table "dlrs", force: :cascade do |t|
-    t.integer  "to",                limit: 20
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.integer  "to",                limit: 8
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.integer  "network_code"
-    t.integer  "messageId",         limit: 30
-    t.integer  "msisdn",            limit: 20
+    t.integer  "messageId",         limit: 8
+    t.integer  "msisdn",            limit: 8
     t.integer  "status"
     t.integer  "err_code"
     t.integer  "price"
@@ -45,14 +45,14 @@ ActiveRecord::Schema.define(version: 20160302202826) do
   end
 
   create_table "messages", force: :cascade do |t|
-    t.integer  "to",                limit: 20
+    t.integer  "to",                limit: 8
     t.string   "text"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
-    t.integer  "msisdn",            limit: 20
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "msisdn",            limit: 8
     t.string   "keyword"
     t.string   "type"
-    t.integer  "messageId",         limit: 30
+    t.integer  "messageId",         limit: 8
     t.integer  "network_code"
     t.float    "price"
     t.string   "status"
@@ -63,11 +63,11 @@ ActiveRecord::Schema.define(version: 20160302202826) do
 
   create_table "mos", force: :cascade do |t|
     t.integer  "status"
-    t.datetime "created_at",                   null: false
-    t.datetime "updated_at",                   null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.text     "type"
     t.integer  "to"
-    t.integer  "msisdn",            limit: 20
+    t.integer  "msisdn",            limit: 8
     t.integer  "messageId"
     t.datetime "message_timestamp"
     t.string   "text"
