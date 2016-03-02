@@ -15,5 +15,59 @@
   <%= @message.text %>
 </p>
 
+<p>
+  <strong>Msisdn:</strong>
+  <%= @message.msisdn %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @message.keyword %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @message.type %>
+</p>
+
+<p>
+  <strong>MessageId:</strong>
+  <%= @message.messageId %>
+</p>
+
+<p>
+  <strong>Network code:</strong>
+  <%= @message.network_code %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @message.price %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @message.status %>
+</p>
+
+<p>
+  <strong>Scts:</strong>
+  <%= @message.scts %>
+</p>
+
+<p>
+  <strong>Error code:</strong>
+  <%= @message.err_code %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @message.created_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @message.updated_at %>
+</p>
 <%= link_to 'Edit', edit_message_path(@message), :class => "button" %>
 <%= link_to 'Back', messages_path, :class => "button" %>

@@ -10,6 +10,17 @@
       <th>Msisdn</th>
       <th>To</th>
       <th>Text</th>
+      <th>Keyword</th>
+      <th>Type</th>
+      <th>MessageId</th>
+      <th>Network code</th>
+      <th>Price</th>
+      <th>Status</th>
+      <th>Scts</th>
+      <th>Error code</th>
+      <th>Message timestamp</th>
+      <th>Created at</th>
+      <th>Updated at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +31,17 @@
         <td><%= message.msisdn %></td>
         <td><%= message.to %></td>
         <td><%= message.text %></td>
+        <td><%= message.keyword %></td>
+        <td><%= message.type %></td>
+        <td><%= message.messageId %></td>
+        <td><%= message.network_code %></td>
+        <td><%= message.price %></td>
+        <td><%= message.status %></td>
+        <td><%= message.scts %></td>
+        <td><%= message.err_code %></td>
+        <td><%= message.message_timestamp %></td>
+        <td><%= message.created_at %></td>
+        <td><%= message.updated_at %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
         <td><%= link_to 'Destroy', message, method: :delete, data: { confirm: 'Are you sure?' } %></td>

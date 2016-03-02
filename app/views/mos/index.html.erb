@@ -8,7 +8,18 @@
 <table>
   <thead>
     <tr>
+      <th>Msisdn</th>
+      <th>To</th>
+      <th>Text</th>
+      <th>Type</th>
       <th>Status</th>
+      <th>MessageId</th>
+      <th>Message timestamp</th>
+      <th>Keyword</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,7 +27,16 @@
   <tbody>
     <% @mos.each do |mo| %>
       <tr>
+        <td><%= mo.msisdn %></td>
+        <td><%= mo.to %></td>
+        <td><%= mo.text %></td>
+        <td><%= mo.type %></td>
         <td><%= mo.status %></td>
+        <td><%= mo.messageId %></td>
+        <td><%= mo.message_timestamp %></td>
+        <td><%= mo.keyword %></td>
+        <td><%= mo.created_at %></td>
+        <td><%= mo.updated_at %></td>
         <td><%= link_to 'Show', mo %></td>
         <td><%= link_to 'Edit', edit_mo_path(mo) %></td>
         <td><%= link_to 'Destroy', mo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
