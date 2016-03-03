@@ -14,9 +14,9 @@
 ActiveRecord::Schema.define(version: 20160303000137) do
 
   create_table "calls", force: :cascade do |t|
-    t.string   "call_id",        limit: 6
-    t.string   "to",             limit: 6
-    t.string   "from",           limit: 6
+    t.string   "call_id",
+    t.string   "to",
+    t.string   "from",
     t.integer  "status"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -30,12 +30,12 @@ ActiveRecord::Schema.define(version: 20160303000137) do
   end
 
   create_table "dlrs", force: :cascade do |t|
-    t.string   "to",                limit: 6
+    t.string   "to",
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.integer  "network_code"
-    t.string   "messageId",         limit: 6
-    t.string   "msisdn",            limit: 6
+    t.string   "messageId",
+    t.string   "msisdn",
     t.integer  "status"
     t.integer  "err_code"
     t.integer  "price"
@@ -45,14 +45,14 @@ ActiveRecord::Schema.define(version: 20160303000137) do
   end
 
   create_table "messages", force: :cascade do |t|
-    t.string   "to",                limit: 6
+    t.string   "to",
     t.string   "text"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
-    t.string   "msisdn",            limit: 6
+    t.string   "msisdn",
     t.string   "keyword"
     t.string   "type"
-    t.string   "messageId",         limit: 6
+    t.string   "messageId",
     t.integer  "network_code"
     t.float    "price"
     t.string   "status"
@@ -66,9 +66,9 @@ ActiveRecord::Schema.define(version: 20160303000137) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.text     "type"
-    t.string   "to",                limit: 6
-    t.string   "msisdn",            limit: 6
-    t.string   "messageId",         limit: 6
+    t.string   "to",
+    t.string   "msisdn",
+    t.string   "messageId",         
     t.datetime "message_timestamp"
     t.string   "text"
     t.string   "keyword"
