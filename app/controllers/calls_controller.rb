@@ -5,7 +5,7 @@ class CallsController < ApplicationController
   # GET /calls
   # GET /calls.json
   def index
-    @calls = Call.all
+    @calls = Call.all.order(created_at: :desc)
   end
 
   # GET /calls/1
