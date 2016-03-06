@@ -1,6 +1,8 @@
 class CallsController < ApplicationController
   skip_before_filter :verify_authenticity_token
+  before_action :transform
   before_action :set_call, only: [:show, :edit, :update, :destroy]
+
 
   # GET /calls
   # GET /calls.json
@@ -66,6 +68,10 @@ class CallsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_call
       @call = Call.find(params[:id])
+    end
+
+    def transform
+        params.deep_transform_keys! { |key| key.tr('-', '_') }
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
