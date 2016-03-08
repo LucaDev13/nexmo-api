@@ -1,0 +1,56 @@
+<%= render  'layouts/navbar' %>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>To:</strong>
+  <%= @tt.to %>
+</p>
+
+<p>
+  <strong>From:</strong>
+  <%= @tt.from %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @tt.text %>
+</p>
+
+<p>
+  <strong>Lg:</strong>
+  <%= @tt.lg %>
+</p>
+
+<p>
+  <strong>Voice:</strong>
+  <%= @tt.voice %>
+</p>
+
+<p>
+  <strong>Repeat:</strong>
+  <%= @tt.repeat %>
+</p>
+
+<p>
+  <strong>Machine detection:</strong>
+  <%= @tt.machine_detection %>
+</p>
+
+<p>
+  <strong>Machine timeout:</strong>
+  <%= @tt.machine_timeout %>
+</p>
+
+<p>
+  <strong>Callback:</strong>
+  <%= @tt.callback %>
+</p>
+
+<p>
+  <strong>Callback method:</strong>
+  <%= @tt.callback_method %>
+</p>
+
+<%= link_to 'Edit', edit_tt_path(@tt), :class => "button" %>
+<%= link_to 'Back', tts_path, :class => "button" %>

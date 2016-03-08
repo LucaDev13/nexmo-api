@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160303000137) do
+ActiveRecord::Schema.define(version: 20160308205646) do
 
   create_table "calls", force: :cascade do |t|
     t.string   "call_id"
@@ -80,6 +80,21 @@ ActiveRecord::Schema.define(version: 20160303000137) do
     t.string   "contact"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tts", force: :cascade do |t|
+    t.string   "to"
+    t.string   "from"
+    t.string   "text"
+    t.string   "lg"
+    t.string   "voice"
+    t.integer  "repeat"
+    t.string   "machine_detection"
+    t.string   "machine_timeout"
+    t.string   "callback"
+    t.string   "callback_method"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
 end

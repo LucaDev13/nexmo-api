@@ -1,0 +1,57 @@
+<%= form_for(@tt) do |f| %>
+  <% if @tt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tt.errors.count, "error") %> prohibited this tt from being saved:</h2>
+
+      <ul>
+      <% @tt.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :to %><br>
+    <%= f.text_field :to %>
+  </div>
+  <div class="field">
+    <%= f.label :from %><br>
+    <%= f.text_field :from %>
+  </div>
+  <div class="field">
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </div>
+  <div class="field">
+    <%= f.label :lg %><br>
+    <%= f.text_field :lg %>
+  </div>
+  <div class="field">
+    <%= f.label :voice %><br>
+    <%= f.text_field :voice %>
+  </div>
+  <div class="field">
+    <%= f.label :repeat %><br>
+    <%= f.number_field :repeat %>
+  </div>
+  <div class="field">
+    <%= f.label :machine_detection %><br>
+    <%= f.text_field :machine_detection %>
+  </div>
+  <div class="field">
+    <%= f.label :machine_timeout %><br>
+    <%= f.text_field :machine_timeout %>
+  </div>
+  <div class="field">
+    <%= f.label :callback %><br>
+    <%= f.text_field :callback %>
+  </div>
+  <div class="field">
+    <%= f.label :callback_method %><br>
+    <%= f.text_field :callback_method %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'create TTS' %>
+  </div>
+<% end %>

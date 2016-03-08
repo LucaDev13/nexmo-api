@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  to: MyString
+  from: MyString
+  text: MyString
+  lg: MyString
+  voice: MyString
+  repeat: 1
+  machine_detection: MyString
+  machine_timeout: MyString
+  callback: MyString
+  callback_method: MyString
+
+two:
+  to: MyString
+  from: MyString
+  text: MyString
+  lg: MyString
+  voice: MyString
+  repeat: 1
+  machine_detection: MyString
+  machine_timeout: MyString
+  callback: MyString
+  callback_method: MyString

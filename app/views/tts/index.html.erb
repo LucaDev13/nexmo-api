@@ -1,0 +1,47 @@
+<%= render  'layouts/navbar' %>
+
+<p id="notice"><%= notice %></p>
+
+<h1>Listing TTS</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>To</th>
+      <th>From</th>
+      <th>Text</th>
+      <th>Lg</th>
+      <th>Voice</th>
+      <th>Repeat</th>
+      <th>Machine detection</th>
+      <th>Machine timeout</th>
+      <th>Callback</th>
+      <th>Callback method</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tts.each do |tt| %>
+      <tr>
+        <td><%= tt.to %></td>
+        <td><%= tt.from %></td>
+        <td><%= tt.text %></td>
+        <td><%= tt.lg %></td>
+        <td><%= tt.voice %></td>
+        <td><%= tt.repeat %></td>
+        <td><%= tt.machine_detection %></td>
+        <td><%= tt.machine_timeout %></td>
+        <td><%= tt.callback %></td>
+        <td><%= tt.callback_method %></td>
+        <td><%= link_to 'Show', tt %></td>
+        <td><%= link_to 'Edit', edit_tt_path(tt) %></td>
+        <td><%= link_to 'Destroy', tt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New TTS', new_tt_path, :class => "button" %>

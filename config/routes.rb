@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tts
   root 'pages#index'
   resources :pages
   resources :dlrs
