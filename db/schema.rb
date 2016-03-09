@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160309184209) do
+ActiveRecord::Schema.define(version: 20160309214305) do
 
   create_table "calls", force: :cascade do |t|
     t.string   "call_id"
@@ -103,8 +103,8 @@ ActiveRecord::Schema.define(version: 20160309184209) do
     t.integer  "call_duration"
     t.datetime "call_request"
     t.string   "network_code"
-    t.datetime "call_start"
-    t.datetime "call_end"
+    t.string   "call_start"
+    t.string   "call_end"
   end
 
 end
