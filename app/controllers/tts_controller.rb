@@ -25,7 +25,7 @@ class TtsController < ApplicationController
   # POST /tts
   # POST /tts.json
   def create
-    @tt = Tt.new(tt_params)
+    @tt = Tt.new(tts_params)
 
     respond_to do |format|
       if @tt.save
@@ -42,7 +42,7 @@ class TtsController < ApplicationController
   # PATCH/PUT /tts/1.json
   def update
     respond_to do |format|
-      if @tt.update(tt_params)
+      if @tt.update(tts_params)
         format.html { redirect_to @tt, notice: 'TTS was successfully updated.' }
         format.json { render :show, status: :ok, location: @tt }
       else
@@ -69,7 +69,7 @@ class TtsController < ApplicationController
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def tt_params
-      params.permit(:status, :call_direction, :call_price, :call_rate, :call_duration, :call_request, :network_code, :call_id, :to, :from, :text, :lg, :voice, :repeat, :machine_detection, :machine_timeout, :callback, :callback_method)
+    def tts_params
+      params.permit(:status, :call_direction, :call_price, :call_rate, :call_duration, :call_request, :network_code, :call_id, :status, :to, :from, :text, :lg, :voice, :repeat, :machine_detection, :machine_timeout, :callback, :callback_method)
     end
 end
