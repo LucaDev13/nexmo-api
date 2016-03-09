@@ -70,6 +70,6 @@ class TtsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tt_params
-      params.permit(:to, :from, :text, :lg, :voice, :repeat, :machine_detection, :machine_timeout, :callback, :callback_method)
+      params.permit(:status, :call_direction, :call_price, :call_rate, :call_duration, :call_request, :network_code, :call_id, :to, :from, :text, :lg, :voice, :repeat, :machine_detection, :machine_timeout, :callback, :callback_method)
     end
 end

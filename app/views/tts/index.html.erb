@@ -7,16 +7,18 @@
 <table>
   <thead>
     <tr>
+      <th>Call Id</th>
       <th>To</th>
-      <th>From</th>
-      <th>Text</th>
-      <th>Lg</th>
-      <th>Voice</th>
-      <th>Repeat</th>
-      <th>Machine detection</th>
-      <th>Machine timeout</th>
-      <th>Callback</th>
-      <th>Callback method</th>
+      <th>Call direction</th>
+      <th>Call price</th>
+      <th>Call rate</th>
+      <th>Call start</th>
+      <th>Call end</th>
+      <th>Call duration</th>
+      <th>Call request</th>
+      <th>Network code</th>
+      <th>Created at</th>
+      <th>Updated at</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,16 +26,18 @@
   <tbody>
     <% @tts.each do |tt| %>
       <tr>
+        <td><%= tt.call_id %></td>
         <td><%= tt.to %></td>
-        <td><%= tt.from %></td>
-        <td><%= tt.text %></td>
-        <td><%= tt.lg %></td>
-        <td><%= tt.voice %></td>
-        <td><%= tt.repeat %></td>
-        <td><%= tt.machine_detection %></td>
-        <td><%= tt.machine_timeout %></td>
-        <td><%= tt.callback %></td>
-        <td><%= tt.callback_method %></td>
+        <td><%= tt.call_direction %></td>
+        <td><%= tt.call_price %></td>
+        <td><%= tt.call_rate %></td>
+        <td><%= tt.call_start %></td>
+        <td><%= tt.call_end %></td>
+        <td><%= tt.call_duration %></td>
+        <td><%= tt.call_request %></td>
+        <td><%= tt.network_code %></td>
+        <td><%= tt.created_at %></td>
+        <td><%= tt.updated_at %></td>
         <td><%= link_to 'Show', tt %></td>
         <td><%= link_to 'Edit', edit_tt_path(tt) %></td>
         <td><%= link_to 'Destroy', tt, method: :delete, data: { confirm: 'Are you sure?' } %></td>

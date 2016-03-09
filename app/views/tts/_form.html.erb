@@ -12,44 +12,52 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :call_id %><br>
+    <%= f.text_field :call_id %>
+  </div>
+  <div class="field">
     <%= f.label :to %><br>
     <%= f.text_field :to %>
   </div>
   <div class="field">
-    <%= f.label :from %><br>
-    <%= f.text_field :from %>
+    <%= f.label :call_direction %><br>
+    <%= f.text_field :call_direction %>
   </div>
   <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
+    <%= f.label :call_price %><br>
+    <%= f.text_field :call_price %>
   </div>
   <div class="field">
-    <%= f.label :lg %><br>
-    <%= f.text_field :lg %>
+    <%= f.label :call_rate %><br>
+    <%= f.text_field :call_rate %>
   </div>
   <div class="field">
-    <%= f.label :voice %><br>
-    <%= f.text_field :voice %>
+    <%= f.label :call_start %><br>
+    <%= f.number_field :call_start %>
   </div>
   <div class="field">
-    <%= f.label :repeat %><br>
-    <%= f.number_field :repeat %>
+    <%= f.label :call_end %><br>
+    <%= f.text_field :call_end %>
   </div>
   <div class="field">
-    <%= f.label :machine_detection %><br>
-    <%= f.text_field :machine_detection %>
+    <%= f.label :call_duration %><br>
+    <%= f.text_field :call_duration %>
   </div>
   <div class="field">
-    <%= f.label :machine_timeout %><br>
-    <%= f.text_field :machine_timeout %>
+    <%= f.label :call_request%><br>
+    <%= f.text_field :call_request %>
   </div>
   <div class="field">
-    <%= f.label :callback %><br>
-    <%= f.text_field :callback %>
+    <%= f.label :network_code %><br>
+    <%= f.text_field :network_code %>
   </div>
   <div class="field">
-    <%= f.label :callback_method %><br>
-    <%= f.text_field :callback_method %>
+    <%= f.label :created_at %><br>
+    <%= f.text_field :created_at %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_at %><br>
+    <%= f.text_field :updated_at %>
   </div>
   <div class="actions">
     <%= f.submit 'create TTS' %>

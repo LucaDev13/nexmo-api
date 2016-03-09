@@ -3,54 +3,60 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Call id:</strong>
+  <%= @tt.call_id %>
+</p>
+
+<p>
   <strong>To:</strong>
   <%= @tt.to %>
 </p>
 
 <p>
-  <strong>From:</strong>
-  <%= @tt.from %>
+  <strong>Call Direction:</strong>
+  <%= @tt.call_direction %>
 </p>
 
 <p>
-  <strong>Text:</strong>
-  <%= @tt.text %>
+  <strong>Call price:</strong>
+  <%= @tt.call_price %>
 </p>
 
 <p>
-  <strong>Lg:</strong>
-  <%= @tt.lg %>
+  <strong>Call rate:</strong>
+  <%= @tt.call_rate %>
 </p>
 
 <p>
-  <strong>Voice:</strong>
-  <%= @tt.voice %>
+  <strong>Call start:</strong>
+  <%= @tt.call_start %>
 </p>
 
 <p>
-  <strong>Repeat:</strong>
-  <%= @tt.repeat %>
+  <strong>Call end:</strong>
+  <%= @tt.call_duration %>
 </p>
 
 <p>
-  <strong>Machine detection:</strong>
-  <%= @tt.machine_detection %>
+  <strong>Call request:</strong>
+  <%= @tt.call_request %>
 </p>
 
 <p>
-  <strong>Machine timeout:</strong>
-  <%= @tt.machine_timeout %>
+  <strong>Network code:</strong>
+  <%= @tt.network_code %>
 </p>
 
 <p>
-  <strong>Callback:</strong>
-  <%= @tt.callback %>
+  <strong>Created at:</strong>
+  <%= @tt.created_at %>
 </p>
 
 <p>
-  <strong>Callback method:</strong>
-  <%= @tt.callback_method %>
+  <strong>Updated at:</strong>
+  <%= @tt.updated_at %>
 </p>
+
 
 <%= link_to 'Edit', edit_tt_path(@tt), :class => "button" %>
 <%= link_to 'Back', tts_path, :class => "button" %>
