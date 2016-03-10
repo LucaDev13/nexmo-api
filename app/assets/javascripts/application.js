@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require responsive-tables
+//= require sorttable
 //= require turbolinks
 //= require_tree .
 
