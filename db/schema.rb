@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160309214305) do
+ActiveRecord::Schema.define(version: 20160310202932) do
 
   create_table "calls", force: :cascade do |t|
     t.string   "call_id"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20160309214305) do
     t.integer  "status"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
-    t.string   "call_request"
+    t.datetime "call_request"
     t.string   "call_direction"
     t.float    "call_price"
     t.float    "call_rate"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20160309214305) do
     t.string   "msisdn"
     t.integer  "status"
     t.integer  "err_code"
-    t.integer  "price"
+    t.float    "price"
     t.integer  "scts"
     t.datetime "message_timestamp"
     t.string   "client_ref"
@@ -103,8 +103,8 @@ ActiveRecord::Schema.define(version: 20160309214305) do
     t.integer  "call_duration"
     t.datetime "call_request"
     t.string   "network_code"
-    t.string   "call_start"
-    t.string   "call_end"
+    t.datetime "call_start"
+    t.datetime "call_end"
   end
 
 end
