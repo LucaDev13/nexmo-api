@@ -4,7 +4,7 @@
 
 <h1>Listing Dlrs</h1>
 
-<table class="responsive sortable">
+<table class="sortable responsive">
   <thead>
     <tr>
       <th>From:</th>
@@ -45,3 +45,5 @@
 <br>
 
 <%= link_to 'New Dlr', new_dlr_path, :class => "button" %>
+<br>
+<%= will_paginate @dlrs, :class => "pagination text-center"%>

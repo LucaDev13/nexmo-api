@@ -5,7 +5,7 @@ class MosController < ApplicationController
   # GET /mos
   # GET /mos.json
   def index
-    @mos = Mo.all.order(created_at: :desc)
+    @mos = Mo.paginate(:page => params[:page]).order(created_at: :desc)
   end
 
   # GET /mos/1

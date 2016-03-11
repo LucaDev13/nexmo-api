@@ -5,7 +5,7 @@
 
 <h1>Listing Mos</h1>
 
-<table class="responsive sortable">
+<table class="sortable responsive">
   <thead>
     <tr>
       <th>Msisdn</th>
@@ -48,3 +48,5 @@
 <br>
 
 <%= link_to 'New Mo', new_mo_path, :class => "button" %>
+<br>
+<%= will_paginate @mos, :class => "pagination text-center"%>

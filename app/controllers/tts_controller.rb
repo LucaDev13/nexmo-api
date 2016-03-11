@@ -5,7 +5,7 @@ class TtsController < ApplicationController
   # GET /tts
   # GET /tts.json
   def index
-    @tts = Tt.all
+    @tts = Tt.paginate(:page => params[:page]).order(created_at: :desc)
   end
 
   # GET /tts/1

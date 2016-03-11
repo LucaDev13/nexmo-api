@@ -5,7 +5,7 @@ class DlrsController < ApplicationController
   # GET /dlrs
   # GET /dlrs.json
   def index
-    @dlrs = Dlr.all.order(created_at: :desc)
+    @dlrs = Dlr.paginate(:page => params[:page]).order(created_at: :desc)
   end
 
   # GET /dlrs/1

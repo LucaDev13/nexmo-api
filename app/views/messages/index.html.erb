@@ -4,7 +4,7 @@
 
 <h1>Listing Messages</h1>
 
-<table class="responsive sortable">
+<table class="sortable responsive">
   <thead>
     <tr>
       <th>Msisdn</th>
@@ -53,3 +53,5 @@
 <br>
 
 <%= link_to 'New Message', new_message_path, :class => "button" %>
+<br>
+<%= will_paginate @dlrs, :class => "pagination text-center"%>

@@ -4,7 +4,7 @@
 
 <h1>Listing Calls</h1>
 
-<table class="responsive sortable">
+<table class="sortable responsive">
   <thead>
     <tr>
       <th>Call Id</th>
@@ -52,3 +52,6 @@
 <br>
 
 <%= link_to 'New Call', new_call_path, :class => "button" %>
+
+<br>
+<%= will_paginate @calls, :class => "pagination text-center"%>

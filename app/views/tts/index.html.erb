@@ -4,7 +4,7 @@
 
 <h1>Listing TTS</h1>
 
-<table class="responsive sortable">
+<table class="sortable responsive">
   <thead>
     <tr>
       <th>Call Id</th>
@@ -52,3 +52,5 @@
 <br>
 
 <%= link_to 'New TTS', new_tt_path, :class => "button" %>
+<br>
+<%= will_paginate @tts, :class => "pagination text-center"%>
