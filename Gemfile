@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
 gem 'will_paginate', '~> 3.0.6'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
