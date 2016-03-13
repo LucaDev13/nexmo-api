@@ -15,6 +15,7 @@
 //= require foundation
 //= require responsive-tables
 //= require sorttable
+//= require rails_admin
 //= require turbolinks
 //= require_tree .
 
