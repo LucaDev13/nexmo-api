@@ -8,13 +8,20 @@
   </div>
   <div class="top-bar-right">
     <ul class="menu" >
-
+       <% if current_user %>
       <li><%= link_to 'DLR', dlrs_path %></li>
       <li><%= link_to 'MO', mos_path %></li>
       <li><%= link_to 'Voice', calls_path %></li>
       <li><%= link_to 'TTS', tts_path %></li>
       <li><%= link_to 'Dashboard', rails_admin_path %></li>
       <li><%= link_to 'Logs', 'https://addons-sso.heroku.com/apps/api-nexmo-v2/addons/516a4912-db30-446b-8cfc-6e421c9c1d97', :target => :blank %></li>
+      <li><%= link_to 'Log Out', log_out_path, method: :delete %></li>
+      <% else %>
+     <li><%= link_to 'Sign Up', sign_up_path %></li>
+     <li><%= link_to 'Log In', log_in_path %></li>
+     <% end %>
     </ul>
   </div>
 </div>
+
+<%= render  'shared/flash' %>

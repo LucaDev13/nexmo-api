@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  mount RailsAdmin::Engine => '/dashboard', as: 'rails_admin'
   resources :tts
   root 'pages#index'
   resources :pages
@@ -7,6 +7,18 @@ Rails.application.routes.draw do
   resources :mos
   resources :calls
   resources :messages
+
+  get '/home', to: 'pages#index', as: :home
+
+  resources :admins, only: [:new, :create]
+   get '/sign_up', to: 'admins#new', as: :sign_up
+
+  resources :sessions, only: [:new, :create, :destroy]
+  get '/log_in', to: 'sessions#new', as: :log_in
+  delete '/log_out', to: 'sessions#destroy', as: :log_out
+
+  #match '/log_out' => 'sessions#destroy', :as => :log_out, via: [:delete]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

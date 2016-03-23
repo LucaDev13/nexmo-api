@@ -10,11 +10,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'foundation-rails'
 gem 'will_paginate', '~> 3.0.6'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'sorcery'
+gem 'validates_email_format_of'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development do
 gem 'sqlite3'
+gem 'web-console', '~> 2.0'
 end
 
 group :production do
@@ -24,6 +27,5 @@ end
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
 end

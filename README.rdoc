@@ -1,8 +1,19 @@
 == README
 
-This app records and display details for the  Nexmo SMS APIs - MS Delivery Receipts (DLRs), Mobile Originated SMS (MOs);
-details for the Nexmo Voice APIs - Call API Return Parameters, Text-To-Speech API Return Parameters. There is also a link to
-heroku logs.
+* This app records and display details for the  Nexmo SMS APIs:
+
+- Details for the Nexmo SMS APIs:
+   - SMS Delivery Receipts (DLRs)
+   - Mobile Originated SMS (MOs)
+ - Details for the Nexmo Voice APIs:
+   - Call API Return Parameters
+   - Text-To-Speech API Return Parameters
+
+ - Link to heroku logs
+
+* Admin Dashboard with RailsAdmin
+* Admin model 
+* Authentication with Sorcery
 
 
 * Ruby version  2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]

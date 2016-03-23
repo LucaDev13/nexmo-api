@@ -19,6 +19,17 @@ RailsAdmin.config do |config|
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
+  ## --sorcery -- ##
+
+  config.authenticate_with do
+    # Use sorcery's before filter to auth users
+    require_login
+  end
+  config.current_user_method(&:current_user)
+
+
+
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
@@ -47,5 +58,6 @@ end
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+
   end
 end
