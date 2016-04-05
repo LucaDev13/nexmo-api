@@ -32,9 +32,13 @@
         <td><%= dlr.scts %></td>
         <td><%= dlr.updated_at %></td>
         <td><%= dlr.created_at %></td>
+        <% if current_user %>
         <td><%= link_to 'Show', dlr %></td>
         <td><%= link_to 'Edit', edit_dlr_path(dlr) %></td>
         <td><%= link_to 'Destroy', dlr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td><%= link_to 'Show', dlr %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

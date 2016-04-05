@@ -41,9 +41,13 @@
         <td><%= tt.network_code %></td>
         <td><%= tt.created_at %></td>
         <td><%= tt.updated_at %></td>
+        <% if current_user %>
         <td><%= link_to 'Show', tt %></td>
         <td><%= link_to 'Edit', edit_tt_path(tt) %></td>
         <td><%= link_to 'Destroy', tt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td><%= link_to 'Show', tt %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>

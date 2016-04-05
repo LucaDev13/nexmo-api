@@ -38,10 +38,13 @@
         <td><%= call.call_rate %></td>
         <td><%= call.created_at %></td>
         <td><%= call.updated_at %></td>
-
+        <% if current_user %>
         <td><%= link_to 'Show', call %></td>
         <td><%= link_to 'Edit', edit_call_path(call) %></td>
         <td><%= link_to 'Destroy', call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% else %>
+        <td><%= link_to 'Show', call %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
