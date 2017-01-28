@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322142222) do
+ActiveRecord::Schema.define(version: 20170128093937) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name"
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20160322142222) do
     t.string   "msisdn"
     t.integer  "status"
     t.integer  "err_code"
-    t.integer  "scts"
+    t.string   "scts"
     t.datetime "message_timestamp"
     t.string   "client_ref"
     t.float    "price"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20160322142222) do
     t.integer  "network_code"
     t.float    "price"
     t.string   "status"
-    t.integer  "scts"
+    t.string   "scts"
     t.integer  "err_code"
     t.datetime "message_timestamp"
   end
