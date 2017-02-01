@@ -1,0 +1,6 @@
+.pagination a, .pagination button {
+  color: #0a0a0a;
+  display: inline;
+  padding: 0.1875rem 0.625rem;
+  border-radius: 0;
+}

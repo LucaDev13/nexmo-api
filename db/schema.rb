@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170128093937) do
+ActiveRecord::Schema.define(version: 20170201123845) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20170128093937) do
     t.string   "call_id"
     t.string   "to"
     t.string   "from"
-    t.integer  "status"
+    t.string   "status"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "call_direction"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170128093937) do
     t.integer  "network_code"
     t.string   "messageId"
     t.string   "msisdn"
-    t.integer  "status"
+    t.string   "status"
     t.integer  "err_code"
     t.string   "scts"
     t.datetime "message_timestamp"
@@ -73,7 +73,7 @@ ActiveRecord::Schema.define(version: 20170128093937) do
   end
 
   create_table "mos", force: :cascade do |t|
-    t.integer  "status"
+    t.string   "status"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
     t.text     "type"

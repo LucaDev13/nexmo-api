@@ -12,8 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require found_overr
  *= require foundation_and_overrides
  *= responsive-tables
  *= rails_admin
+
 
  */
