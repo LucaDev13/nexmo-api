@@ -13,10 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
+//= require turbolinks
+//= require rails_admin
 //= require responsive-tables
 //= require sorttable
-//= require rails_admin
-//= require turbolinks
 //= require_tree .
-
-$(function(){ $(document).foundation(); });
