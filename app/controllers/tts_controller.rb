@@ -1,5 +1,6 @@
 class TtsController < ApplicationController
   skip_before_filter :verify_authenticity_token
+  skip_before_action :require_login, only: [:new, :create]
   before_action :set_tts, only: [:show, :edit, :update, :destroy]
 
   # GET /tts

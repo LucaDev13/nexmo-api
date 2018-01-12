@@ -5,7 +5,10 @@ class ApplicationController < ActionController::Base
 
     before_action :transform
 
-    
+    #Require login
+    before_action :require_login
+
+
 
     def transform
         #convert parameters with hyphen to parameters with underscore.
