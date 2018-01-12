@@ -1,6 +1,6 @@
 == README
 
-* This app records and display details for the  Nexmo SMS APIs:
+* This app records and display callbacks details for the  Nexmo SMS APIs:
 
 - Details for the Nexmo SMS APIs:
    - SMS Delivery Receipts (DLRs)
@@ -12,9 +12,9 @@
  - Link to heroku logs
 
 * Admin Dashboard with RailsAdmin
-* Admin model 
+* Admin model
 * Authentication with Sorcery
 
 
-* Ruby version  2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
-* Rails version 4.2.1
+* Ruby version  2.3.6
+* Rails version 4.2.10
