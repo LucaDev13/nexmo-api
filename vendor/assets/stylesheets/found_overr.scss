@@ -4,3 +4,61 @@
   padding: 0.1875rem 0.625rem;
   border-radius: 0;
 }
+
+//--hero-full-screen--/
+
+$hero-full-screen-bg: url('communication-technology.jpg') center center no-repeat;
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: #ffffff;
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
+
+  .middle-content-section {
+    text-align: center;
+    color: $hero-full-screen-text-color;
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+
+    svg {
+      height: rem-calc(60);
+      width: rem-calc(60);
+      fill: $hero-full-screen-text-color;
+    }
+  }
+
+  // optional demo styles
+  .top-bar {
+    background: transparent;
+
+    .menu {
+      background: transparent;
+    }
+
+    .menu-text {
+      color: $hero-full-screen-text-color;
+    }
+
+    .menu li {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: $hero-full-screen-text-color;
+      font-weight: bold;
+    }
+  }
+}
