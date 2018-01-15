@@ -1,6 +1,6 @@
 class AdminsController < ActionController::Base
   skip_before_action :require_login, only: [:new, :create]
-  
+
   def new
      @admin = Admin.new
    end
