@@ -17,4 +17,4 @@
 /tmp
 
 # Ignore public/assets in prod
-/public/assets
+/public/assets/*
